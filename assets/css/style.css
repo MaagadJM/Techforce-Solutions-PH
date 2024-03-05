@@ -164,7 +164,7 @@ section {
 
 #tfsi-logo {
   /* font-size: 40px; */
-  font-size: calc(11px + 2vw);
+  font-size: calc(12px + 2vw);
   font-family: "Quicksand", sans-serif;
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -343,7 +343,8 @@ section {
 }
 
 .animated-title>div.text-top {
-  border-bottom: 1vmin solid #0000005e;
+  /* border-bottom: 1vmin solid #0000005e; */
+  border-bottom: 1vmin solid #ff0000db;
   border-radius: 20px;
   top: 0;
 
