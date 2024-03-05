@@ -331,7 +331,7 @@ section {
 
 .animated-title>div div {
   /* font-size: 12vmin; */
-  font-size: calc(12px + 4vw);
+  font-size: calc(12px + 4vw + -1vh);
   /* Adjust the formula as needed */
   /* font-size: 60px; */
   padding: 2vmin 0;
