@@ -344,6 +344,7 @@ section {
 
 .animated-title>div.text-top {
   /* border-bottom: 1vmin solid #0000005e; */
+  border-bottom: 1vmin solid #0000005e;
   border-radius: 20px;
   top: 0;
 
