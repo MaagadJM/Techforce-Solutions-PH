@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /*--------------------------------------------------------------
 # General
@@ -35,7 +35,8 @@ section {
 /*--------------------------------------------------------------
 # Spinner
 --------------------------------------------------------------*/
-#spnrlodr {
+/* #spnrlodr { */
+#colapsing-nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -43,10 +44,11 @@ section {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #475E8A;
+  background: #475e8a;
 }
 
-#spnrlodr:before {
+/* #spnrlodr:before { */
+#colapsing-nav {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -54,7 +56,7 @@ section {
 
   border: 3px solid #00fffb;
   border-top-color: #00fffb;
-  border-bottom-color: #475E8A;
+  border-bottom-color: #475e8a;
   border-radius: 50%;
   width: 160px;
   height: 160px;
@@ -71,9 +73,10 @@ section {
   }
 }
 
-#spnrlodr h1 {
+/* #spnrlodr h1 { */
+#colapsing-nav {
   position: fixed;
-  color: #fff;
+  color: #e60000;
 
   text-align: center;
 
@@ -81,8 +84,6 @@ section {
 
   /* top: calc(40% - 30px);
   left: calc(35% - 30px); */
-
-
 }
 
 /*--------------------------------------------------------------
@@ -95,7 +96,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background-color: #475E8A;
+  background-color: #475e8a;
   width: 50px;
   height: 50px;
   border-radius: 50px;
@@ -109,8 +110,7 @@ section {
 } */
 
 .home-nav:hover {
-  background-color: #3B4C5C;
-
+  background-color: #3b4c5c;
 }
 
 .home-nav.active {
@@ -136,7 +136,6 @@ section {
   background-color: var(--overlay-bg-color);
 }
 
-
 #header {
   /* background-color: var(--header-bg-color); */
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -144,11 +143,8 @@ section {
   /*  padding-bottom: 20px; */
 }
 
-
-
-
 .scrolled {
-  background-color: #3B4C5C !important;
+  background-color: #3b4c5c !important;
   /* background-color: var(--header-bg-color); */
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   /* height: 5%; */
@@ -171,7 +167,7 @@ section {
 
 /* CSS for the navbar background color */
 #tfsi-main-nav.navbar-bg {
-  background-color: #3B4C5C;
+  background-color: #3b4c5c;
   text-align: center;
   border-radius: 10px;
   margin-top: 20px;
@@ -189,10 +185,6 @@ section {
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-
-
-
-
 /* #header #tfsi-logo {
   font-size: 40px;
 }
@@ -208,7 +200,6 @@ section {
 /*--------------------------------------------------------------
 #                      HEADER - END
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 #                   Navigation Menu
@@ -228,14 +219,6 @@ section {
   color: #fff;
 }
 
-
-
-
-
-
-
-
-
 /*--------------------------------------------------------------
                    # Navigation Menu END
 --------------------------------------------------------------*/
@@ -254,10 +237,6 @@ section {
   /* pointer-events: none;
   user-select: none; */
 }
-
-
-
-
 
 /*--------------------------------------------------------------
 #                      ANIMATED TEXT HOME PAGE
@@ -322,14 +301,14 @@ section {
   width: 97vmin;
 }
 
-.animated-title>div {
+.animated-title > div {
   height: 50%;
   overflow: hidden;
   position: absolute;
   width: 100%;
 }
 
-.animated-title>div div {
+.animated-title > div div {
   /* font-size: 12vmin; */
   font-size: calc(12px + 4vw + -1vh);
   /* Adjust the formula as needed */
@@ -338,23 +317,22 @@ section {
   position: absolute;
 }
 
-.animated-title>div div span {
+.animated-title > div div span {
   display: block;
 }
 
-.animated-title>div.text-top {
+.animated-title > div.text-top {
   /* border-bottom: 1vmin solid #0000005e; */
   border-bottom: 1vmin solid #0000005e;
   border-radius: 20px;
   top: 0;
 
-
   position: relative;
   /* Add relative positioning */
 }
 
-.animated-title>div.text-top::after {
-  content: '';
+.animated-title > div.text-top::after {
+  content: "";
   position: absolute;
   bottom: -5px;
   /* Adjust the distance of the shadow from the box */
@@ -366,34 +344,42 @@ section {
   /* Shadow color and opacity */
 }
 
-.animated-title>div.text-top div {
+.animated-title > div.text-top div {
   animation: showTopText 7s infinite;
   /* animation-delay: 10.1s; */
   animation-fill-mode: forwards;
   bottom: 0;
   transform: translate(0, 100%);
+
+  /* left: 10%; */
 }
 
-.animated-title>div.text-top div span:first-child {
+#up-txt-animate span {
+  display: flex;
+  justify-content: center;
+}
 
+.animated-title > div.text-top div span:first-child {
   color: #fbfbfb;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
-.animated-title>div.text-bottom {
+.text-bottom div {
+  display: flex;
+  justify-content: center;
+}
+
+.animated-title > div.text-bottom {
   bottom: 0;
 }
 
-.animated-title>div.text-bottom div {
+.animated-title > div.text-bottom div {
   animation: showBottomText 7s infinite;
   animation-delay: 2s;
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
 }
-
-
-
 
 /*--------------------------------------------------------------
 #                ANIMATED TEXT HOME PAGE END
@@ -403,7 +389,7 @@ section {
 #                 START YOU NEW PROJECT MODAL
 --------------------------------------------------------------*/
 #synp-x-btn {
-  background-color: #475E8A;
+  background-color: #475e8a;
 }
 
 .Hm-modalbtn {
@@ -412,12 +398,11 @@ section {
   justify-content: center;
   align-items: center;
   top: 60vh;
-
 }
 
 #mdl-h-cont {
   /* padding: 10px; */
-  background-color: #475E8A;
+  background-color: #475e8a;
   color: #fff;
 
   text-align: center;
@@ -434,7 +419,7 @@ section {
 }
 
 #synp-mdl-btn1:hover {
-  background-color: #475E8A;
+  background-color: #475e8a;
 }
 
 #synp-sbmt-btn {
@@ -442,8 +427,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #475E8A;
-  border-color: #475E8A;
+  background-color: #475e8a;
+  border-color: #475e8a;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -459,11 +444,10 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 #synp-mdl-btn2 {
-  background-color: #475E8A;
+  background-color: #475e8a;
   color: #fff;
   width: 40%;
   transition: ease-in-out 0.5s;
@@ -471,26 +455,14 @@ section {
 
 #synp-mdl-btn2:hover {
   background-color: #fff;
-  color: #475E8A;
-  border-color: #475E8A;
+  color: #475e8a;
+  border-color: #475e8a;
   font-weight: bold;
 }
 
 /*--------------------------------------------------------------
 #            START YOU NEW PROJECT MODAL END
 --------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
 # About Us
@@ -499,9 +471,8 @@ section {
   background-color: #fff;
 }
 
-
 #tfsi-abt {
-  color: #475E8A;
+  color: #475e8a;
   font-weight: bold;
   font-size: 20px;
 }
@@ -516,8 +487,6 @@ section {
   font-size: 0.9rem;
 }
 
-
-
 .about-container {
   overflow: hidden;
   box-shadow: 0px 2px 8px 0px #b0bec5;
@@ -526,10 +495,7 @@ section {
   border-radius: 1rem;
   position: relative;
   margin: 0.5rem;
-
 }
-
-
 
 .icn-cont ul {
   margin: 0;
@@ -537,7 +503,7 @@ section {
 }
 
 .icn-cont-img {
-  background-color: #475E8A;
+  background-color: #475e8a;
 
   padding: 20px;
 
@@ -546,13 +512,11 @@ section {
   border-radius: 50%;
 }
 
-
 .abt-lbl {
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 20px;
 }
-
 
 .about .description {
   font-size: 16px;
@@ -566,9 +530,7 @@ section {
 
   pointer-events: none;
   user-select: none;
-
 }
-
 
 @keyframes underline {
   0% {
@@ -594,18 +556,17 @@ section {
 }
 
 .about .underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #475E8A;
+  background-color: #475e8a;
   /* Change this to your desired color */
   transform-origin: bottom left;
   animation: underline 2s linear infinite;
 }
-
 
 /*--------------------------------------------------------------
 # Product
@@ -624,8 +585,6 @@ section {
   text-align: center;
   border-radius: 20px;
 }
-
-
 
 /*--------------------------------------------------------------
 # WEB PORTFOLIO
@@ -649,7 +608,7 @@ section {
   color: inherit;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .wbpf-photo-gallery h2 {
     margin-bottom: 25px;
     padding-top: 25px;
@@ -673,10 +632,7 @@ section {
 
 .wbpf-photo-gallery .item {
   padding-bottom: 30px;
-
 }
-
-
 
 .wbpf-photo-gallery .item img {
   transition: transform 0.3s ease;
@@ -686,7 +642,6 @@ section {
   transform: scale(1.5);
 }
 
-
 #lightbox.lightbox {
   display: flex;
   flex-direction: column;
@@ -694,8 +649,6 @@ section {
   align-items: center;
 
   height: 100vh;
-
-
 }
 
 .lb-image {
@@ -714,13 +667,12 @@ section {
   right: 10%;
 }
 
-
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 
 #contact {
-  background-color: #3B4C5C;
+  background-color: #3b4c5c;
   color: #fff;
 }
 
@@ -735,21 +687,19 @@ p {
   color: #444444;
 }
 
-
 #synp-mdl-btn3 {
   color: #444444;
   border-color: #444444;
 }
 
 #synp-mdl-btn3:hover {
-  color: #FF6858;
+  color: #ff6858;
 }
 
 #cntc-inqr {
-  background: -webkit-linear-gradient(90deg, #3B4C5C, #475E8A, #3B4C5C);
+  background: -webkit-linear-gradient(90deg, #3b4c5c, #475e8a, #3b4c5c);
   /* background: radial-gradient(circle, #3B4C5C, #FFFFFF, #3B4C5C); */
   background-size: 100% 50%;
-
 }
 
 .cntc-inqr-form {
@@ -758,7 +708,6 @@ p {
   border-radius: 10px;
   /* margin-left: 10px;
   margin-right: 10px; */
-
 }
 
 /* .cntc-inqr-form .form-control {
@@ -769,28 +718,24 @@ p {
   text-align: center;
 }
 
-
-
 .cntc-inqr-form h3 {
   text-align: center;
-  color: #475E8A;
+  color: #475e8a;
 }
 
 .cntc-inqr-form .form-control::placeholder {
-  color: #475E8A;
+  color: #475e8a;
   font-weight: 600;
 }
 
 #cntc-inqr-btn {
-  background-color: #475E8A;
+  background-color: #475e8a;
 }
 
 #cntc-inqr-btn:hover {
   background-color: #fff;
-  color: #475E8A;
+  color: #475e8a;
 }
-
-
 
 /* .btnContactSubmit {
   width: 50%;
@@ -801,7 +746,6 @@ p {
   border: none;
   cursor: pointer;
 } */
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -815,7 +759,7 @@ p {
 
 #footer {
   font-size: 14px;
-  background: #3B4C5C;
+  background: #3b4c5c;
   /* background-color: rgba(66, 60, 60, 0.933); */
 }
 
@@ -839,7 +783,7 @@ p {
 }
 
 #ftr-icn img {
-  background-color: #475E8A;
+  background-color: #475e8a;
   border-radius: 50%;
   padding: 10px;
 }
@@ -848,21 +792,6 @@ p {
   background-color: #ffffff21;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* .bult::before {
   content: '\2022';
   color: #ff0101;
@@ -870,18 +799,6 @@ p {
   position: relative;
   top: 8px;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------- EXTRA ANIMATION ----------- */
 /* .typing {
